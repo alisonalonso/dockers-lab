@@ -1,19 +1,14 @@
 # Java Oracle
 
-This Dockerfile, prepares Ubuntu docker image to run Java 8 by Oracle.
+This Dockerfile, prepares a dockers image to run Oracle Java 8 (JRE and JDK).
 By using this image, you acknowledge that you have read and accepted the terms of the [end user license agreement](http://www.oracle.com/technetwork/java/javase/terms/license/)
 
-## How to use this image
+## How to use
 
-### Using a Dockrfile
-
-In your `Dockerfile`, you can easily compile and run your project:
+### Running Java Apps
 
 ```
-FROM alisonalonso/java
-copy . /src
-RUN javac MyApp.java
-CMD ["java", "MyApp"]
+$ docker run -it --rm -v $(pwd):/app -w /app alisonalonso/java:jre8 java MyApp
 ```
 
 ### Compile your app in a container
