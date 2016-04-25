@@ -21,9 +21,8 @@ ADD http://downloadirpf.receita.fazenda.gov.br/irpf/2016/IRPF2016-1.2.zip \
 RUN unzip -d /opt IRPF2016-1.2.zip && \
     echo "INSTALL_PATH=/opt/receitanet" | tee args.properties && \
     java -jar Receitanet-1.07.jar -options args.properties && \
+    ln -sf /opt/receitanet/receitanet.jar /receitanet && \
     rm -rf IRPF2016-1.2.zip Receitanet-1.07.jar args.properties
-
-WORKDIR /Documents
 
 ENTRYPOINT ["java", "-jar"]
 CMD ["/opt/IRPF2016/irpf.jar"]

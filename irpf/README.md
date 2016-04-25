@@ -7,19 +7,34 @@ Prepara o ambiente mínimo para a execução do IRPF da Receita Federal.
 Como o programa IRPF é um programa com interface gráfica, talvez seja necessário liberar acesso ao xhost
 
 ```
-$ xhost -
+$ xhost +
 ```
 
 Para restringir o acesso novamente, basta executar:
 
 ```
-$ xhost +
+$ xhost -
 ```
 
 ## Executando o container
 
-É necessário conectar o container à sua sessão do X11.
+É necessário conectar o container à sua sessão do X11. 
+Podemos realizar isto através dos argumntos `--net=host` e `--env="DISPLAY"`
 
 ```
-$ docker run -it --rm --net=host --env="DISPLAY" alisonalonso/irpf:2016
+$ docker run -it --rm --net=host --env="DISPLAY" alisonalonso/irpf
 ```
+
+## Executando o Receitanet
+
+Esta imagem também já possui o programa de transmissão Receitanet.
+Para executa-lo, basta executar o container com o argumento `receitanet`
+
+```
+$ docker run -it --rm --net=host --env="DISPLAY" alisonalonso/irpf receitanet
+```
+
+## Possivel problema ao gerar a imagem
+
+Para criar a imagem, é realizado o download dos programas IRPF e Receitanet diretamente do site da Receita.
+Em algumas ocasiões, os servidores da receita não respondem, e faz-se necessário cancelar o processo e gerar novamente a imagem.
