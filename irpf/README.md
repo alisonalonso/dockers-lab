@@ -1,10 +1,13 @@
 # Programa de Declaração do Imposto de Renda em Docker
 
+- 2016, latest [(2016/Dockerfile)](/alisonalonso/dockers-lab/blob/master/irpf/2016/Dockerfile)
+- 2015 [(2015/Dockerfile)](/alisonalonso/dockers-lab/blob/master/irpf/2015/Dockerfile)
+
 Prepara o ambiente mínimo para a execução do IRPF da Receita Federal.
 
 ## Requisitos
 
-Como o programa IRPF é um programa com interface gráfica, talvez seja necessário liberar acesso ao xhost
+Como o programa IRPF é utiliza com interface gráfica, talvez seja necessário liberar acesso ao xhost
 
 ```
 $ xhost +
