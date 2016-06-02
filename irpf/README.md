@@ -1,7 +1,7 @@
 # Programa de Declaração do Imposto de Renda em Docker
 
-- 2016, latest [(2016/Dockerfile)](/alisonalonso/dockers-lab/blob/master/irpf/2016/Dockerfile)
-- 2015 [(2015/Dockerfile)](/alisonalonso/dockers-lab/blob/master/irpf/2015/Dockerfile)
+- 2016, latest [(2016/Dockerfile)](https://github.com/alisonalonso/dockers-lab/blob/master/irpf/2016/Dockerfile)
+- 2015 [(2015/Dockerfile)](https://github.com/alisonalonso/dockers-lab/blob/master/irpf/2015/Dockerfile)
 
 Prepara o ambiente mínimo para a execução do IRPF da Receita Federal.
 
