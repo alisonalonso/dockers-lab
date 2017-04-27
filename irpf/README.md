@@ -1,6 +1,7 @@
 # Programa de Declaração do Imposto de Renda em Docker
 
-- 2016, latest [(2016/Dockerfile)](https://github.com/alisonalonso/dockers-lab/blob/master/irpf/2016/Dockerfile)
+- 2017, latest [(2017/Dockerfile)](https://github.com/alisonalonso/dockers-lab/blob/master/irpf/2017/Dockerfile)
+- 2016 [(2016/Dockerfile)](https://github.com/alisonalonso/dockers-lab/blob/master/irpf/2016/Dockerfile)
 - 2015 [(2015/Dockerfile)](https://github.com/alisonalonso/dockers-lab/blob/master/irpf/2015/Dockerfile)
 
 Prepara o ambiente mínimo para a execução do IRPF da Receita Federal.
@@ -30,7 +31,7 @@ $ docker run -it --rm --net=host --env="DISPLAY" alisonalonso/irpf
 
 ## Executando o Receitanet
 
-Esta imagem também já possui o programa de transmissão Receitanet.
+A imagem 2016 possui o programa de transmissão Receitanet.
 Para executa-lo, basta executar o container com o argumento `receitanet`
 
 ```
