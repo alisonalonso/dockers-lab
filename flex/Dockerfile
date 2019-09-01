@@ -3,11 +3,12 @@ MAINTAINER Alison Alonso <alisonlba@gmail.com>
 
 # Dependencies...
 RUN apk update && \
-    apk add rsync curl 
+    apk add rsync curl && \
+    apk add ca-certificates && rm -rf /var/cache/apk/* 
 
 # Getting...
 ENV FLEX_SDK_DIR=apache-flex-sdk \
-    FLEX_VERSION=4.16.0
+    FLEX_VERSION=4.16.1
 ENV FLEX_SDK_FILE=${FLEX_SDK_DIR}-${FLEX_VERSION}-bin.tar.gz \
     FLEX_HOME=/opt/${FLEX_SDK_DIR}
 ENV PATH=$PATH:$FLEX_HOME/bin
