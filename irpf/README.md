@@ -1,5 +1,6 @@
 # Programa de Declaração do Imposto de Renda em Docker
 
+- 2020 [(2020/Dockerfile)](https://github.com/alisonalonso/dockers-lab/blob/master/irpf/2020/Dockerfile)
 - 2019 [(2019/Dockerfile)](https://github.com/alisonalonso/dockers-lab/blob/master/irpf/2019/Dockerfile)
 - 2018 [(2018/Dockerfile)](https://github.com/alisonalonso/dockers-lab/blob/master/irpf/2018/Dockerfile)
 - 2017 [(2017/Dockerfile)](https://github.com/alisonalonso/dockers-lab/blob/master/irpf/2017/Dockerfile)
